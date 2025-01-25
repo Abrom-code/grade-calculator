@@ -97,11 +97,8 @@ function processInputs() {
         else if(Scores[i]>=40){
             Grade[i] = 1;
         }
-        else if(Scores[i]<=40 && Scores[i]>0){
-            Grade[i] = 0;
-        }
         else{
-            console.log("Invalid input");
+            Grade[i] = 0;
         }
     }
     for(let i=0; i<Grade.length; i++){
@@ -110,14 +107,8 @@ function processInputs() {
                 total += Grade[i] * 2;
                 break;
             case 1:
-                total +=Grade[i] * 3;
-                break;
             case 2:
-                total +=Grade[i] * 3;
-                break;
             case 3:
-                total +=Grade[i] * 3;
-                break;
             case 4:
                 total +=Grade[i] * 3;
                 break;
