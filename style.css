@@ -113,6 +113,10 @@ form .score-input input:focus{
     color: aliceblue;
     font-size: 1.2rem;
     font-weight: 600;
+
+    width: 50%;
+    height: 40px;
+    align-self: center;
 }
 .calculate-button:hover,
 .display-result button:hover{
