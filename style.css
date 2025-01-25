@@ -19,7 +19,7 @@ body{
     min-width: 100vw;
 }
 .container{
-    min-width: 300px;
+    min-width: 350px;
     width: 30%;
     height: fit-content;
     background: linear-gradient(130deg, #a8ff78, #78ffd6);
@@ -51,6 +51,14 @@ body{
     font-family: "Roboto Condensed", sans-serif;
   }
   
+.result-input{
+    border: 2px solid none;
+    border-radius: 10px;
+    padding: 2rem;
+
+    box-shadow: inset 2px 2px 30px rgba(164, 27, 218, 0.2);
+}
+
 
 .calculator-box{
     flex-direction: column;
