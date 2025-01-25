@@ -9,49 +9,48 @@
 </head>
 <body>
     <div class="container">
-        <div class="calculator-box">
+
+        <div class="calculator-box content active">
+            <div class="title">
+                <h1>SWE 2nd YEAR GRADE CALCULATOR</h1>
+            </div>
             <form action="">
                 <div class="score-input">
                     <label for="global-score">Enter Global Score : </label>
-                    <input type="text"  class="global-score" id="global-score" >
+                    <input type="number"  class="global score" id="global-score" >
                 </div>
                 <div class="score-input">
                     <label for="statistics-score">Enter Statistics Score : </label>
-                    <input type="text"  class="statistics-score" id="statistics-score" >
+                    <input type="number"   class="statistics score" id="statistics-score" >
                 </div>
                 <div class="score-input">
                     <label for="discrete-score">Enter Discrete Score : </label>
-                    <input type="text"  class="discrete-score" id="discrete-score" >
-                </div>
-                <div class="score-input">
-                    <label for="global-score">Enter Global Score : </label>
-                    <input type="text"  class="global-score" id="global-score" >
+                    <input type="number"  class="discrete score" id="discrete-score" >
                 </div>
                 <div class="score-input">
                     <label for="history-score">Enter History Score : </label>
-                    <input type="text"  class="history-score" id="history-score" >
+                    <input type="number"  class="history score" id="history-score" >
                 </div>
                 <div class="score-input">
                     <label for="ise-score">Enter ISE Score : </label>
-                    <input type="text"  class="ise-score" id="ise-score" >
+                    <input type="number"  class="ise score" id="ise-score" >
                 </div>
                 <div class="score-input">
                     <label for="fop-score">Enter FOP Score : </label>
-                    <input type="text"  class="fop-score" id="fop-score" >
+                    <input type="number"  class="fop score" id="fop-score" >
                 </div>
-
-                <button class="calculate-button">
-                    Calculate
-                </button>
             </form>
-
-            <div class="display-result">
-                <span>Your CGPA is : </span>
-                <span>0.00</span>
-                <button>Back</button>
-            </div>
-
+            <button class="calculate-button">
+                CALCULATE
+            </button>           
         </div>
+
+        <div class="display-result content">
+            <p>Your CGPA is : </p>
+            <p class="display-area">0.00</p>
+            <button class="back-button">Back</button>
+        </div>
+
     </div>
 
     <script src="./scrypt.js" type="module"></script>

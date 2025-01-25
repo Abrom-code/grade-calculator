@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #ff7eb3, #ff758c, #ff9472);
+    color: #4a4a4a;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 100vh;
+    min-width: 100vw;
+}
+.container{
+    min-width: 300px;
+    width: 30%;
+    height: fit-content;
+    background: linear-gradient(130deg, #a8ff78, #78ffd6);
+
+    margin-top: 1rem;
+    border: 3px solid none;
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+    padding: 1rem;
+}
+
+.title{
+    margin-bottom: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: rem;
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+  }
+  
+  .title h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 1.25rem;
+    color: #8964b0;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+
+.calculator-box{
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.calculator-box form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form .score-input{
+    display: flex;
+    justify-content: space-between;
+
+}
+form .score-input label{
+    font-size: 1.2rem;
+}
+form .score-input input{
+    border: 1px solid #090f86;
+    border-radius: 5px;
+
+    width: 50px;
+    padding: 0 0.5rem;
+
+    text-align: center;
+   
+    
+}
+form .score-inputinput::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+form .score-input input:focus{
+    outline: 2px solid rgb(84, 94, 84);
+    box-shadow: 0 0 5px rgba(9, 11, 9, 0.5);
+    border: none;
+
+}
+.calculate-button,
+.display-result button{
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.calculate-button:hover,
+.display-result button:hover{
+    transition: .2s;
+    background: linear-gradient(40deg, #ff00ff, #ff00ff, #00ffff, #00ffff);
+    box-shadow: 0 2px 10px rgba(234, 0, 255, 0.8), 0 8px 40px rgba(3, 213, 255, 0.8);
+  }
+
+.display-result{
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.display-result p:first-child {
+   font-weight: bold;
+}
+.content{
+    display: none 
+}
+.active{
+    display: flex;
+}
+.invalid-input{
+    outline: 1.5px solid rgb(255, 0, 0);
+    border: none;
+}
